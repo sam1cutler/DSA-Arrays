@@ -1,0 +1,19 @@
+2. Explore the push() method
+- length = 1
+- capacity = 3
+After pushing more values:
+- lenth = 6 (pushed 5 additional values)
+- capacity = 12 (exceeded 3 --> bumped by 1 --> 4 multiplied by size_ratio of 3 --> 12)
+- memory address / pointer = 3 - prior array occupied positions (indices) 0, 1, and 2;
+  "new" array starts at index 3.
+
+3. Exploring pop()
+- length = 3 (removed 3 values)
+- capacity = 12 (nothing would have caused a resize)
+- address = 3 (again, no reason to change this)
+
+4. 
+- Why did 'tauhida' not work? because the memory is a Float64Array; 
+  I suspect this class can only accept numbers, not strings.
+- Purpose of resize is if requested action requires more space in memory than already allocated.
+
